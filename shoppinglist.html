@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shopping list</title>
+</head>
+<style type="text/css">
+    body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        height:70vh;
+    }
+
+    h1{
+        margin-bottom:100px;
+    }
+
+    th:tr{
+        color: blue;
+
+    }
+    tr:nth-of-type(2n){
+        border: 1px solid black;
+        background-color: rgba(150, 150, 150, 0.5);
+
+    }
+
+    td{
+        padding: 8px 8px;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <h1>WELCOME TO HABITUATE READING BOOKSTORE</h1>
+    <h2>Here is the shopping list</h2>
+
+<table style="margin-left: 20px;">
+<!-- Table headers -->
+    <th>
+        <tr style="color: green; ">
+        <td>UNIT</td>
+        <td>DETAILS</td>
+
+<!--        <td>Item Name</td>-->
+<!--        <td>Item_id</td>-->
+<!--        <td>Item Quantity</td>-->
+<!--        <td>Item Price</td>-->
+</tr>
+    </th>
+
+<tr>
+    <td>Book Name</td>
+    <td>{{list[0]}}</td>
+</tr>
+<tr>
+    <td>Book_id</td>
+    <td>{{list[2]}}</td>
+</tr>
+
+<tr>
+    <td>Book Price</td>
+    <td>{{list[1]}}</td>
+</tr>
+
+<tr>
+    <td>Quantity</td>
+    <td>{{list[3]}}</td>
+</tr>
+
+</table>
+
+</body>
+</html>
+

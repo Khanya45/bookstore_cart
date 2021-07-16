@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+</head>
+<style type="text/css">
+    body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        height:70vh;
+    }
+
+    .btnSubmit{
+        margin-left:200px
+    }
+
+
+    h1{
+        margin-bottom:100px;
+    }
+
+</style>
+<body>
+<h1>WELCOME TO HABITUATE READING BOOKSTORE</h1>
+<h2>Books you want to buy</h2>
+<form action = "http://localhost:5000/login" method = "post">
+         <table>
+        <tr><td>Item Name</td>
+        <td><input type ="text" name ="itemname"></td></tr>
+        <tr><td>Item Price</td>
+        <td><input name ="itemprice"></td></tr>
+        <tr><td>Item Quantity</td>
+        <td><input  name ="itemquantity"></td></tr>
+        <tr><td class="btnSubmit"><input type = "submit"></td></tr>
+    </table>
+      </form>
+</body>
+</html>
